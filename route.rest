@@ -1,0 +1,28 @@
+GET http://localhost:3000/subscribers
+
+###
+GET http://localhost:3000/subscribers/5ee8e2786a54d8348aefe7ec
+
+###
+POST http://localhost:3000/subscribers HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "hello",
+    "subscribedToChannel": "hello nice"
+}
+
+
+###
+DELETE http://localhost:3000/subscribers/5ee8cfa55052701b3b020633
+
+
+
+###
+PATCH http://localhost:3000/subscribers/5ee8e2786a54d8348aefe7ec HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "new hello"
+}
+

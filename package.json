@@ -4,8 +4,7 @@
   "description": "very simple vanila.js todolist not using server",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon bin"
+    "devStart": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -18,9 +17,12 @@
   },
   "homepage": "https://github.com/minshikkim/vanillajs-todolist#readme",
   "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "mocha": "^8.0.1",
     "mongodb": "^3.5.9",
+    "mongoose": "^5.9.19",
     "nodemon": "^2.0.4",
     "should": "^13.2.3"
   }
