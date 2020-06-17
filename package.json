@@ -1,0 +1,29 @@
+{
+  "name": "vanillajs-todolist",
+  "version": "1.0.0",
+  "description": "very simple vanila.js todolist not using server",
+  "main": "app.js",
+  "scripts": {
+    "devStart": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/minshikkim/vanillajs-todolist.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/minshikkim/vanillajs-todolist/issues"
+  },
+  "homepage": "https://github.com/minshikkim/vanillajs-todolist#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mocha": "^8.0.1",
+    "mongodb": "^3.5.9",
+    "mongoose": "^5.9.19",
+    "nodemon": "^2.0.4",
+    "should": "^13.2.3"
+  }
+}
