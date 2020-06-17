@@ -1,2 +1,2 @@
 # vanillajs-todolist
-very simple vanila.js todolist not using server
+very simple vanila.js todolist
