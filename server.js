@@ -1,19 +1,19 @@
-
-require('dotenv').config()
-
 const express = require('express')
 const app = express()
 const mongoose = require('mongoose')
+const config = require('./config/index');
 
 
 
 
 // DB connection
-mongoose.connect(process.env.DATABASE_URL,  { useUnifiedTopology: true, useNewUrlParser : true } );
+mongoose.connect(config.databaseURL,  { useUnifiedTopology: true, useNewUrlParser : true } );
 const db = mongoose.connection
-db.on('error', (error) => console.error(error)) // ? 
-db.once('open', (error) => console.log('Conntected to Databases')) // ? 
+db.on('error', (error) => console.error(error)) // using bulit-in event by defalut eventlistener
+db.once('open', (error) => console.log('Conntected to Databases')) // Equivalent to connected (same) 
 
+
+// using json (if you want, use module body-parser)
 app.use(express.json());
 app.use(express.urlencoded( {extended : false } ));
 
